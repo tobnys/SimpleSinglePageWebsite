@@ -1,0 +1,383 @@
+﻿body
+{
+    background-color: #292a2b;
+    font-family: 'Open Sans', sans-serif;
+}
+.mainLogo
+{
+    padding-top: 50px;
+}
+
+.photoSec1
+{
+    background-image: none, url(../images/negativespace-8-2.jpg);
+    width: 100%;
+    height: 400px;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo2
+{
+    background-image: none, url(../images/rami-al-zayat-170349.jpg);
+    width: 100%;
+    height: 400px;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo3
+{
+    background-image: none, url(../images/hector-martinez-110928.jpg);
+    width: 100%;
+    height: 400px;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo4
+{
+    background-image: none, url(../images/emile-perron-190221.jpg);
+    width: 100%;
+    height: 400px;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-con1
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.text-con1 p
+{
+    font-size: 18px;
+    padding-left: 21%;
+    padding-right: 17%;
+}
+
+.text-con2
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 350px;
+}
+
+.text-con2 p
+{
+    padding-top: 30px;
+    font-size: 18px;
+    padding-left: 30%;
+    padding-right: 25%;
+    margin: -10px;
+}
+
+.text-con3
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 530px;
+}
+
+.text-con3 p
+{
+    padding-top: 30px;
+    font-size: 18px;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 20px;
+    margin-top: -30px;
+}
+
+.text-con4
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1300px;
+}
+
+.text-con4 p
+{
+    padding-top: 30px;
+    font-size: 14px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 20px;
+    margin-top: -30px;
+}
+
+.text-con5
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 200px;
+}
+
+.text-con5 p
+{
+    padding-top: 30px;
+    font-size: 18px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 20px;
+    margin-top: -30px;
+}
+
+.text-footer
+{
+    background-color: #292a2b;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text-footer p
+{   
+    color: white;
+    margin-top: -10px;
+    font-size: 13px;
+    text-align: center;
+
+}
+.text-footer a
+{   
+    color: white;
+    margin-top: -10px;
+    font-size: 12px;
+    text-decoration:underline;
+}
+
+.text-footer a:hover
+{
+    text-decoration:none;
+}
+
+.text-footer hr
+{
+    opacity: 0.4;
+    width: 40%;
+}
+
+.text-footer h2
+{   
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.navbar 
+{
+    background-color: #292a2b;
+}
+
+.nav a
+{
+    font-size: 18px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#copyrightMark
+{
+    opacity: 0.3;
+    color: white;
+}
+
+.glyphicon-chevron-right
+{
+    font-size: 20px;
+    color: #32edcb;
+}
+
+form
+{
+    align-content: center;
+}
+
+.well {
+    background: #292a2b;
+    box-shadow: 0 0 9px 0 black;
+}
+
+.well label
+{
+    color: white;
+}
+
+@media (max-width: 480px) 
+{
+    .text-con4
+    {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: static;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+    .text-con3
+    {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: static;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+}
+
+@media (max-width: 968px) 
+{
+    .text-con4
+    {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: static;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+
+    .text-con3
+    {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: static;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+
+    .text-con1 p
+    {
+        font-size: 15px;
+    }
+    .text-con2 p
+    {
+        font-size: 15px;
+    }
+    .text-con3 p
+    {
+        font-size: 15px;
+    }
+    .text-con4 p
+    {
+        font-size: 15px;
+    }
+    .text-con5 p
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1200px) 
+{
+    .text-con4
+    {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: static;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+    .text-con3
+    {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: static;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 530px;
+    }
+}
+
+#mainNav, #mainNav { transition: all 0.5s ease; }
+.glyphicon-arrow-up, .glyphicon-arrow-up { transition: all 0.3s ease;}
+
+#mainNav.shrinked {
+  opacity: 0;
+}
+
+.glyphicon-arrow-up
+{
+    font-size: 30px;
+    margin-top: 8px;
+    margin-right: 10px;
+    border: 5px;
+}
+
+.glyphicon-arrow-up.invisible
+{
+    font-size: 0;
+    opacity: 0;
+}
+
+#socialMediaIcons
+{
+    color: #32edcb;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}

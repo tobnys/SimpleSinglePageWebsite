@@ -1,0 +1,41 @@
+﻿
+// Smooth scrolling
+$(function (){
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 55
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+$('.nav a').on('click', function () {
+    $('.navbar-toggle').click();
+});
+
+// Message pop-up
+
+// Subscription pop-up
+var subBtn = document.getElementById("subBtn");
+var modal = document.getElementById('modal');
+var span = document.getElementsByClassName("close");
+
+btn.onclick = function () {
+    modal.style.display = "none";
+};
+
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};

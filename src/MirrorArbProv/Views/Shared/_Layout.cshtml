@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MirrorArbProv</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/MainStyleSheet.css?version=1" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/MainStyleSheet.css?version=1" asp-append-version="true" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+    </environment>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                    <a href="#top"><span class="glyphicon glyphicon-home" style="color: #32edcb; margin-right: 3px;"></span>
+                        Hem</a></li>
+                    <li>
+                    <a href="#mKey"><span class="glyphicon glyphicon-align-justify" style="color: #32edcb; margin-right: 3px;"></span>
+                        Säkerhet</a></li>
+                    <li>
+                        <a href="#varfor">
+                            <span class="glyphicon glyphicon-comment" style="color: #32edcb; margin-right: 3px;"></span>
+                            Varför mKey?
+                        </a>
+                    </li>
+                    <li>
+                    <a href="#contactForm"><span class="glyphicon glyphicon-comment" style="color: #32edcb; margin-right: 3px;"></span>
+                        Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-fixed-top">
+        <a href="#top"><span class="glyphicon glyphicon-arrow-up pull-right" style="color: #32edcb;"></span></a>
+    </div>
+@RenderBody()
+
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script>
+          $.validate({
+            lang: 'es'
+          });
+        </script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script>
+          $.validate({
+            lang: 'es'
+          });
+        </script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
