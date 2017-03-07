@@ -11,15 +11,14 @@ namespace MirrorArbProv.Services
         {
             var apiKey = Environment.GetEnvironmentVariable("SENDGRID_APIKEY");
             var client = new SendGridClient(apiKey);
-
             var msg = new SendGridMessage()
             {
-                From = new EmailAddress(email, "Företagsnamn"),
+                From = new EmailAddress(email, "Kund"),
                 Subject = title,
                 PlainTextContent = message,
                 HtmlContent = "<br><br>" + "<strong>Namn: </strong>" + namn + "<br><strong>E-post: </strong>" + email + "<br><strong>Telefon: </strong>" + telefon + "<br><strong>Företag: </strong>" + company + "<br><br><strong>Meddelande: </strong>" + message
             };
-            msg.AddTo(new EmailAddress("tobnystrom@gmail.com", "Admin"));
+            msg.AddTo(new EmailAddress("mirrorarbprov@gmail.com", "Support"));
             var response = await client.SendEmailAsync(msg);
         }
     }
